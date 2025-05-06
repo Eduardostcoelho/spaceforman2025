@@ -1,0 +1,202 @@
+body {
+    font-family: "Lobster", sans-serif;
+    font-style: italic;
+}
+
+
+header {
+    background-color: #bbbbbb;
+}
+
+.Caixa {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+nav {
+    position: absolute;
+    /* posição do testo em relação a pagina*/
+    top: 126px;
+    /*alinhamento em relação ao tamanho da caixa*/
+    right: 0;
+    /* afastamento em relação a caixa*/
+
+}
+
+nav li {
+
+    display: inline;
+    /* lista fica na horizontal*/
+    margin: 0 0 0 15px;
+    /* afastamento do testo*/
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: lighter;
+    font-size: 22px;
+    text-decoration: none;
+    /* aparece o traço quando passa o mause*/
+
+}
+
+nav a:hover {
+    /* hover modificar algo interativo com o mause*/
+    color: #c78c19;
+    text-decoration: underline;
+
+}
+
+.banner {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.principal {
+    padding: 3em 0;
+    background-color: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+
+}
+
+
+.mapa {
+
+    padding: 3em;
+    background: linear-gradient(#fefefe, #888888);
+   
+}
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios {
+
+    padding: 3em 0;
+    background-color: #888888;
+
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item {
+    line-height: 2.2;
+}
+.item::before{
+    content: "★" ;
+}
+
+.item:first-child {
+    font-weight: bold;
+
+}
+
+.imagembeneficios {
+    width: 60%;
+    opacity: .9;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px #000000;
+
+
+}
+.imagembeneficios:hover{
+
+    opacity: 1;
+}
+
+.video {
+    width: 649px;
+    margin: 2em auto;
+}
+
+
+footer {
+
+    text-align: center;
+    background-image: url(./bg.jpg);
+    /* coloca imagem como fundo*/
+    padding: 30px 0;
+
+
+}
+
+.copy {
+    color: #ffff;
+}
+
+
+/*RESPONSIVIDADE DO SITE-( FUNCIONAR TANTO NO PC QUANTO NO CELULAR*/
+
+@media screen and (max-width: 480px) {
+    .Caixa, .principal,.mapa-conteudo, .conteudo-beneficios, .video{ 
+        
+        width: auto; 
+    }
+    
+    h1{
+    text-align: center;
+    }
+    nav{
+        position: static;
+        margin: 0 0 0 15px;
+
+    }
+    .principal {
+        text-align: justify;
+    }
+    .lista-beneficios, .imagembeneficios{ 
+        width: 100%;
+    }
+}
+    
+
+
+
+
+
+
+

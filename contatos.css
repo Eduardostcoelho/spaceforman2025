@@ -1,0 +1,129 @@
+header {
+    background-color: #bbbbbb;
+}
+
+.Caixa {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+nav {
+    position: absolute;
+    top: 126px;
+    right: 0;
+
+}
+
+nav li {
+
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: lighter;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+nav a:hover {
+    /* hover modificar algo interativo com o mause*/
+    color: #c78c19;
+    text-decoration: underline;
+
+}
+
+main{
+
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+
+form{
+
+    margin: 40px 0;
+}
+
+form label, form p{
+
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.inputs-padrao{
+    display: block; /*coloca em alinhamento vertical*/
+    margin: 0 0 20px;
+    padding: 10px 25px; /*aumenta a largura do mimput*/
+    width: 50%;/*aumenta a largura em relação a pagina*/
+}
+.checkbox{
+
+    margin: 20px 0;
+
+}
+.enviar {
+
+    width: 44%;
+    padding: 5px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.enviar:hover{
+    background-color: red;
+}
+
+
+
+p{ 
+    font-size: 20px;
+    margin:  15px 0;
+
+}
+
+
+footer {
+
+    text-align: center;
+    background-image:  url(./bg.jpg);/* coloca imagem como fundo*/
+    padding: 30px 0;
+    
+ 
+ }
+
+ .copy {
+    color: #ffff;
+}
+
+
+@media screen and (max-width: 480px) {
+    .Caixa{ 
+        
+        width: auto; 
+    }
+    
+    h1{
+    text-align: center;
+    }
+    nav{
+        position: static;}
+    
+   
+    
+  
+        
+
+   
+    
+}

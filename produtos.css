@@ -1,0 +1,144 @@
+header {
+    background-color: #bbbbbb;
+}
+
+.Caixa {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+nav {
+    position: absolute;/* posição do testo em relação a pagina*/
+    top: 126px;/*alinhamento em relação ao tamanho da caixa*/
+    right: 0;/* afastamento em relação a caixa*/
+
+}
+
+nav li {
+
+    display: inline;/* lista fica na horizontal*/
+    margin: 0 0 0 15px; /* afastamento do testo*/
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: lighter;
+    font-size: 22px;
+    text-decoration: none;/* aparece o traço quando passa o mause*/
+
+}
+
+nav a:hover {
+    /* hover modificar algo interativo com o mause*/
+    color: #c78c19;
+    text-decoration: underline;
+
+}
+
+.Produtos {
+
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+
+.Produtos li {
+
+    display: inline-block;
+    /* ajustar o nalinhamento da lista*/
+    text-align: center;
+    width: 30%;
+    /*ajustar o tamanho */
+    vertical-align: top;
+    /* alinhamento vertical*/
+    border: solid black 2px;
+    /* colocar borda em um box*/
+    margin: 0 1.5%;
+    /* ajustar as margens*/
+    padding: 20px 30px;
+    /* definir posição do box em relação a pagina*/
+    box-sizing: border-box;
+    /* ajustar quebra de box*/
+    border-radius: 10px;
+    /*arredondar os cantos das bordas*/
+}
+
+.Produtos li:hover {
+    /* muda a cor da borda quando passa o mause*/
+    border-color: #c78c19;
+
+}
+
+.Produtos li:active {
+    /*muda a cor da borda quando clica com o mouse*/
+    border-color: #088c19;
+}
+
+.Produtos h2 {
+
+    font-size: 30px;
+    font-weight: bolder;
+    /* ajustar a groçura da linha*/
+
+}
+
+.Produtos H2:hover {
+    font-size: 34px;
+    /* muda o tamanho da fonte quando passa o mouse*/
+}
+
+.Produtos Produtos-d {
+
+    font-size: 18px;/* tamanho do texto*/
+
+}
+
+.Produtos Produtos-preco {
+
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+footer {
+
+   text-align: center;
+   background-image:  url(./bg.jpg);/* coloca imagem como fundo*/
+padding: 30px 0;
+   
+
+}
+
+.copy {
+    color: #ffff;
+}
+
+@media screen and (max-width: 480px) {
+    .Caixa{ 
+        
+        width: auto; 
+    }
+    
+    h1{
+    text-align: center;
+    }
+    nav{
+        position: static;}
+
+    .Produtos{
+        display: grid;
+        width: 0 0 0 30px;
+        
+    
+        
+    }
+        
+        
+
+   
+    
+}
